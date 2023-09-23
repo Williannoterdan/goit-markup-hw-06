@@ -610,6 +610,11 @@ text-transform: capitalize;
 
   .li_codexs {
     width: calc((100% - 72px) / 4);
+    justify-content: center;
+    align-items: center;
+  }
+  .container .icon_conteiner{
+    width: 100%;
   }
   .strategi-text {
     font-weight: 500;
@@ -657,6 +662,7 @@ text-transform: capitalize;
   .li_proces {
     width: calc((100% - 48px) / 3);
   }
+
 }
 /* Section 4 */
 .section_my_tim {
@@ -768,12 +774,11 @@ text-transform: capitalize;
   .section_my_tim {
     display: flex;
     align-items: flex-start;
-    margin: 96px auto 0;
     flex-shrink: 0;
+    padding: 0 108px;
   }
   .ul_my_tim_1 {
     gap: 64px 24px;
-    margin: 0 108px;
     flex-direction: row;
     
   }
@@ -787,21 +792,38 @@ text-transform: capitalize;
 @media (min-width: 1158px) {
   .section_my_tim {
     align-items: flex-start;
-    margin: 120px auto;
     flex-shrink: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
-
+  .li_my_tim{
+    width: calc((100% - 24px) / 4);
+  }
   .ul_my_tim {
     align-items: center;
     display: flex;
     justify-content: center;
     gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .ul_my_tim_1{
+    flex-wrap: nowrap;
+  }
+  .container .section_my_tim_div{
+    width: 100%;
+  }
+  .list .ul_my_tim_1{
+    width: 100%;
   }
 }
 /* Section 5 */
 .section_customers{
-  margin: 0 16px;
+  margin: 0 auto;
 }
+.section_customers .container{
+  padding: 0 16px;
+}
+
 .section_h {
   text-align: center;
   font-size: 36px;
@@ -850,6 +872,9 @@ text-transform: capitalize;
   .section_customers {
     margin: 0 auto;
   }
+  .section_customers .container{
+    padding: 0 108px;
+  }
   .ul_customers {
     gap: 72px 24px;
   }
@@ -873,7 +898,7 @@ text-transform: capitalize;
 }
 /* Foter */
 .footer_section{
-  margin: 0 16px;
+  margin: 0;
 }
 .footer_index_container {
   background-color: var(--color-of-txt-two);
@@ -900,6 +925,7 @@ text-transform: capitalize;
   letter-spacing: 0.02em;
   font-weight: 500;
   width: 100%;
+  padding: 0 80px;
 }
 .ul_footer {
   align-items: center;
@@ -1003,23 +1029,21 @@ text-transform: capitalize;
 @media (min-width: 768px) {
   .div_footer{
     justify-content: flex-start;
-    padding-left: 108px;
+  }
+ .div_footer{
+    padding: 0 108px;
+  }
+  .p_footer_intro {
+    padding: 0;
   }
 
-  .footer_index_container {
-    width: 768px;
-height: 456px; 
-  } 
   .div_indiv_footer {
     justify-content: flex-start;
   }
   .div_indiv_footer {
-    width: 264px;
-height: 80px;  
-
+    width: calc((100% - 24px) / 2);
   }
   .div_thry_sector_of_futer {
-    width: 453px;
 height: 80px; 
   }
   .p_footer_intro{
@@ -1027,20 +1051,56 @@ height: 80px;
   }
   .div_thry_sector_of_futer {
 justify-content: flex-start;
+align-items: start;
+flex-wrap: nowrap;
   }
   .form_footer {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 24px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+  }
+  
+  .label_in_form_in_footer{
+    width: 45%;
   }
   .input_in_form_in_footer_classs{
-    width: 264px;
+    width: 100%;
+  }
+  .input_in_form_in_footer_classs {
+    width: 100%;
   }
 }
 @media (min-width: 1158px) {
-  .footer_index_container {
-    width: 1440px;
-height: 312px;
+  .div_indiv_footer {
+    width: 33% ;
+    margin: 0;
   }
+  .div_thry_sector_of_futer {
+    width: 44%;
+    
+  }
+  .div_thry_sector_of_futer {
+    margin: 0;
+  }
+  .div_footer{
+    flex-wrap: nowrap;
+  }
+  .div_footer{
+    padding: 140px 120px 100px;
+  }
+  .div_indiv_footer {
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .p_footer_intro {
+    padding: 0 0 16px;
+}
+.label_in_form_in_footer {
+  width: 60%;
+}
 }
 .container_js {
   position: fixed;
@@ -1225,4 +1285,127 @@ margin: auto;
   width: 428px;
 height: 796px; 
 margin: o auto;
+}
+/* Portfolio-main */
+.button_filter {
+
+}
+.h1-portfolio{
+  text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize; 
+text-align: center;
+padding: 96px 0 72px;
+
+}
+.ul_button_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.boton_tail {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-of-background-thre);
+  background-color: var(--color-of-background-two);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.boton_tail:hover,
+.boton_tail:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.list_ul_li_prodact {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.list_ul_li_prodact{
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prodact_txt {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.prodact_txt .company-codexs-h {
+  margin-bottom: 8px;
+}
+/* Row1 */
+.img_portfolio_div {
+  position: relative;
+  overflow: hidden;
+}
+
+ .p_in_img_portfolio_div {
+  position: absolute;
+ 
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-of-background-two);
+  padding: 40px 32px;
+  background-color: var(--color-of-background-thre);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.a_row:hover .p_in_img_portfolio_div,
+.a_row:focus .p_in_img_portfolio_div {
+  transform: translateY(0%);
+}
+
+.a_row {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.a_row:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.a_row:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+@media (min-width: 768px) {
+  .list_li_prodact {
+  width: calc((100% - 48px) / 2);
+}
+.list_ul_li_prodact {
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: row;
+}
+}
+@media (min-width: 1158px) {
+  .list_li_prodact {
+  width: calc((100% - 48px) / 3);
+}
+  .button_filter{
+    padding: 0 120px;
+  }
 }
