@@ -33,7 +33,7 @@ ol {
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* iNVISIBOL COLONTYTL */
@@ -258,13 +258,20 @@ button:focus {
     padding: 0;
     margin: 0;
     list-style: none;
+    position: absolute;
+    top: 2%;
+    left: 7%;
   }
   .mobile-menu_two{
-    margin-top: 30%;
+
     display: flex;
     justify-content: center;
     gap:40px;
     flex-direction: column;
+    position: absolute;
+    top: 55%;
+    left: 7%;
+
   }
   .contact-date-the{
     color:  #434455;
@@ -290,6 +297,9 @@ margin-top: 48px;
 display: flex;
 gap: 33px;
 flex-wrap: nowrap;
+position: absolute;
+top: 75%;
+left: 7%;
 }
 .contact-date_two{
   font-family: Roboto;
@@ -578,10 +588,11 @@ text-transform: capitalize;
 .codexs-section {
   display: flex;
   align-items: flex-start;
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .codexs-section .container{
   margin: 0 auto;
+  padding: 0 16px;
 
 }
 
@@ -590,11 +601,7 @@ text-transform: capitalize;
   gap: 72px;
   flex-direction: column;
 }
-.li_codexs {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+
 .company-codexs-h {
   font-weight: 500;
   font-size: 20px;
@@ -616,13 +623,12 @@ text-transform: capitalize;
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--color-of-txt-one);
-  font-weight: 500;
-  width: 288px; 
 }
 
 @media (min-width: 768px) {
   .codexs-section .container {
-    width: 712px; 
+    width: 768px; 
+    padding: 0 16px;
   }
   .ul_codexs {
   
@@ -636,8 +642,8 @@ text-transform: capitalize;
   }
   .strategi-text {
     font-weight: 700;
-    text-align: center;
     text-transform: capitalize;
+    text-align: left;
   }
 
   .strategi-description {
@@ -837,7 +843,7 @@ text-transform: capitalize;
     width: calc((100% - 24px) / 2);
   }
   .section_my_tim .section_my_tim_div{
-    width: 712px; 
+    width: 580px; 
   }
 }
 @media (min-width: 1158px) {
@@ -851,7 +857,7 @@ text-transform: capitalize;
   }
   .section_my_tim .section_my_tim_div{
     width: 100%;
-    max-width: 1128px;
+    max-width: 1158px;
   /* }
   .li_my_tim{
     width: calc((100% - 24px) / 4);
@@ -999,9 +1005,7 @@ text-transform: capitalize;
 .div_indiv_footer{
   max-width: 264px;
 }
-.div_thry_sector_of_futer .p_footer_intro{
-  text-align: center;
-}
+
 .ul_footer {
   align-items: center;
   width: 208px;
@@ -1165,10 +1169,16 @@ flex-wrap: nowrap;
   }
   .div_footer{
     flex-wrap: nowrap;
+    gap: 0;
+
   }
   .div_footer{
     width: 100%;
-    max-width: 1128px;
+    max-width: 1158px;
+  }
+
+  .futer_shovwl{
+    margin: 0 90px 0 120px;
   }
   .div_indiv_footer {
     justify-content: flex-start;
@@ -1240,6 +1250,11 @@ flex-wrap: nowrap;
 }
 .container_in_container_js .icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+@media(max-width: 768px){
+  .p_modal{
+   width: 256px;
+  }
 }
 .p_modal{
 font-weight: 500; 
@@ -1387,6 +1402,7 @@ margin: o auto;
   align-items: center;
   justify-content: center;
   width: 320px;
+  padding: 0 16px;
 }
 
 .h_two_portfolio{
