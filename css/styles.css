@@ -260,7 +260,7 @@ button:focus {
     list-style: none;
   }
   .mobile-menu_two{
-    margin-top: 50%;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
     gap:40px;
