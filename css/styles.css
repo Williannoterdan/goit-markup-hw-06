@@ -961,12 +961,16 @@ text-transform: capitalize;
 .footer_index_container {
   background-color: var(--color-of-txt-two);
   padding: 96px 0;
-
+  
 }
 .div_footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 72px 0;
+  width: 320px;
+  
+
 }
 .div_indiv_footer {
   display: flex;
